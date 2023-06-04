@@ -379,10 +379,22 @@ img.active {
   opacity: 1;
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Teko", sans-serif;
+  background: #f1fbff;
+  width: 100%;
+  min-height: 100vh;
+}
+
 .wrapper {
   width: 80%;
-  padding: 30px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-header {
@@ -392,6 +404,7 @@ img.active {
   font-size: 50px;
   color: #262626;
   letter-spacing: 2px;
+  display: block;
 }
 
 .content {
@@ -465,7 +478,7 @@ img.active {
   right: 0;
 }
 
-.accordion {
+.faq {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -473,29 +486,29 @@ img.active {
   border-radius: 25px;
 }
 
-.accordion .image-box {
-  height: 360px;
+.faq .image-box {
+  height: 400px;
   width: 300px;
 }
 
-.accordion .image-box img {
+.faq .image-box img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.accordion .accordion-text {
+.faq .accordion-text {
   width: 60%;
 }
 
-.accordion .accordion-text .title {
+.faq .accordion-text .title {
   font-size: 35px;
   font-weight: 600;
-  color: #7d2ae8;
+  color: #25344f;
   font-family: "Fira Sans", sans-serif;
 }
 
-.accordion .accordion-text .faq-text {
+.faq .accordion-text .faq-text {
   margin-top: 25px;
   height: 263px;
   overflow-y: auto;
@@ -505,7 +518,7 @@ img.active {
   display: none;
 }
 
-.accordion .accordion-text li {
+.faq .accordion-text li {
   list-style: none;
   cursor: pointer;
 }
@@ -519,13 +532,13 @@ img.active {
 .accordion-text li .question-arrow .question {
   font-size: 18px;
   font-weight: 500;
-  color: #595959;
+  color: #25344f;
   transition: all 0.3s ease;
 }
 
 .accordion-text li .question-arrow .arrow {
   font-size: 20px;
-  color: #595959;
+  color: #25344f;
   transition: all 0.3s ease;
 }
 
@@ -535,12 +548,12 @@ img.active {
 
 .accordion-text li:hover .question-arrow .question,
 .accordion-text li:hover .question-arrow .arrow {
-  color: #7d2ae8;
+  color: #30a6f0;
 }
 
 .accordion-text li.showAnswer .question-arrow .question,
 .accordion-text li.showAnswer .question-arrow .arrow {
-  color: #7d2ae8;
+  color: #25344f;
 }
 
 .accordion-text li .line {
@@ -564,37 +577,36 @@ img.active {
 }
 
 @media (max-width: 994px) {
-  .accordion {
+  .faq {
     max-width: 100%;
     padding: 45px 60px 45px 60px;
   }
-  .accordion .image-box {
+  .faq .image-box {
     height: 360px;
     width: 220px;
   }
-  .accordion .accordion-text {
+  .faq .accordion-text {
     width: 63%;
   }
 }
 @media (max-width: 820px) {
-  .accordion {
+  .faq {
     flex-direction: column;
   }
-  .accordion .image-box {
+  .faq .image-box {
     height: 360px;
     width: 300px;
-    background: #7d2ae8;
     width: 100%;
     border-radius: 25px;
     padding: 30px;
   }
-  .accordion .accordion-text {
+  .faq .accordion-text {
     width: 100%;
     margin-top: 30px;
   }
 }
 @media (max-width: 538px) {
-  .accordion {
+  .faq {
     padding: 25px;
   }
   .accordion-text li p {
