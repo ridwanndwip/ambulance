@@ -467,13 +467,10 @@ img.active {
 
 .accordion {
   display: flex;
-  max-width: 1010px;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: white;
   border-radius: 25px;
-  padding: 45px 90px 45px 60px;
 }
 
 .accordion .image-box {
@@ -605,7 +602,57 @@ img.active {
   }
 }
 .footer {
-  margin: 5em 0 5em 0;
+  background-color: #25344f;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2em 0 2em;
+}
+.footer_logo {
+  margin-top: 2em;
+}
+.footer_title {
+  margin-top: 1em;
+  font-size: 13px;
+  font-weight: 200;
+  text-align: center;
+}
+.footer h4 {
+  margin-top: 2em;
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer_icon {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.footer_icon img {
+  width: 25px;
+  display: block;
+}
+.footer_more {
+  margin-top: 1.5em;
+}
+.footer_more span {
+  font-size: 13px;
+  font-weight: 200;
+}
+.footer_copyright {
+  margin-top: 3em;
+  text-align: center;
+  border-top: 1px solid #ffffff;
+  width: 98%;
+}
+.footer_copyright span {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  font-size: 9px;
+  font-weight: 200;
 }
 
 body {

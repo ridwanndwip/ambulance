@@ -1,3 +1,56 @@
 .footer{
-    margin: 5em 0 5em 0;
+    background-color: $color1;
+    color: $color3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2em 0 2em;
+
+    &_logo{
+        margin-top: 2em;
+    }
+
+    &_title{
+        margin-top: 1em;
+        @include text(13px, 200);
+        text-align: center;
+    }
+
+    h4{
+        margin-top: 2em;
+        @include text(15px, 500);
+    }
+
+    &_icon{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 25px;
+            display: block;
+        }
+    }
+
+    &_more{
+        margin-top: 1.5em;
+        span{
+            @include text(13px, 200);
+        }
+    }
+
+    &_copyright{
+        margin-top: 3em;
+        text-align: center;
+        border-top: 1px solid $color3;
+        width: 98%;
+        span{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            display: block;
+            @include text(9px, 200);
+        }
+    }
 }
