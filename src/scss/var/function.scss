@@ -1,0 +1,17 @@
+// color function
+$color1:#25344f;
+$color2:#2b4163; 
+$color3:#ffffff;
+$color4:#bdc8db;
+$color5:#30a6f0;
+$color6:#eef2f6;
+
+// #ffffff
+// #000000
+
+// mixin
+
+@mixin text($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+}

@@ -1,0 +1,53 @@
+.service{
+    // @include flex(center,center,column);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5em 2em 5em 2em;
+    gap: .5em;
+    text-align: center;
+
+
+    &_capt{
+        @include text(30px, bold);
+    }
+
+    &_title{
+        @include text(15px, medium);
+        margin-top: .5em;
+    }
+
+    &_bg{
+        margin: 2em 1em 0 1em;
+        background-color: $color1;
+        border-radius: 40px;
+
+        .service_card{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: .5em;
+            padding: 2em 2em;
+            color: $color3;
+
+            &_img{
+                width: 60px;
+                display: block;
+                background-color: $color2;
+                padding: 1.5em;
+                border-radius: 50%;
+            }
+
+            &_capt{
+                @include text(20px, 600);
+                margin-top: 1em;
+            }
+
+            &_title{
+                @include text(15px, 400);
+                color: $color4;
+            }
+
+        }
+    }
+}

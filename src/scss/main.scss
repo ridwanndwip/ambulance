@@ -1,0 +1,24 @@
+@import 'var/function';
+@import 'var/med_query';
+
+// Component
+@import'style_comp/nav';
+@import'style_comp/hero';
+@import'style_comp/service';
+@import'style_comp/review';
+
+
+body {
+    background-color: $color3;
+    font-family: 'Poppins', sans-serif;
+    color: $color1;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
