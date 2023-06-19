@@ -15,31 +15,43 @@
 </head>
 <body>
     
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <span>Ambulance Logo</span>
-        </div>
+    <div id="root">
+        <nav id="main-nav" class="sidebar">
+            <a href="/" onclick="route()">Home</a>
+            <a href="/about" onclick="route()">About</a>
+            <a href="/lorem" onclick="route()">Lorem</a>
+        </nav>
+        <div id="main-page"></div>
+    </div>
 
-        <ul class="menu">
-            <li><a href="#"> Home </a></li>
-            <li><a href="#"> Gallery </a></li>
-            <li><a href="#"> Service </a></li>
-            <li><a href="#"> About </a></li>
-        </ul>
-        <div class="nav_toggle">
-            <input type="checkbox">
-            <span> </span>
-            <span> </span>
-            <span> </span>
-        </div>
-        <div class="nav_button">
-            <a href="#" class="nav_button_link">Call Now</a>
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <!-- <div id="root">
+        <nav>
+            <div class="logo">
+                <span>Ambulance Logo</span>
+            </div>
+    
+            <ul class="menu" id="main-nav">
+                <li><a href="/" onclick="route()"> Home </a></li>
+                <li><a href="/about" onclick="route()"> Gallery </a></li>
+                <li><a href="/lorem" onclick="route()"> Service </a></li>
+                <li><a href="/about" onclick="route()"> About </a></li>
+            </ul>
+            <div class="nav_toggle">
+                <input type="checkbox">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            <div class="nav_button">
+                <a href="#" class="nav_button_link">Call Now <i class='bx bx-right-arrow-alt'></i> </a> 
+            </div>
+        </nav>
+        <div id="main-page"></div>
+    </div> -->
 
     <!-- hero -->
-    <div class="hero">
+    <!-- <div class="hero">
         <div class="hero_loc">
             <img src="src/img/maps-and-flags.png" alt="">
             <span class="hero_loc_title">Bekasi, Jawa Barat</span>
@@ -47,7 +59,7 @@
         <span class="hero_capt"> Lorem ipsum dolor sit amet. </span>
         <span class="hero_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quis voluptatum facilis libero id cupiditate atque eum incidunt ipsam at.</span>
         <div class="hero_button">
-            <a href="#" class="hero_button_call"> Call Now</a>
+            <a href="#" class="hero_button_call"> Call Now <i class='bx bx-right-arrow-alt'></i> </a>
         </div>
         <div class="hero_support">
             <span class="hero_support_title"> Telah Bekerjasama dengan</span>
@@ -58,10 +70,10 @@
                 <img class="hero_logo" src="src/img/logo1.png" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Service -->
-    <div class="service">
+    <!-- <div class="service">
         <span class="service_capt">Pelayanan Kami</span>
         <span class="service_title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nulla et libero veritatis, earum eaque adipisci alias sint maxime deserunt.</span>
         <div class="service_bg">
@@ -81,11 +93,10 @@
                 <span class="service_card_title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias animi, necessitatibus ullam a iusto cupiditate.</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Reviews -->
-
-    <aside>
+    <!-- <aside>
         <section class="testimonials">
                 <div class="testimonials_container">
                     <div class="testimonials_judul">
@@ -122,11 +133,11 @@
                     </div>
                 </div>
             </section>
-    </aside>
+    </aside> -->
 
     <!-- Gallery -->
 
-    <div class="gallery">
+    <!-- <div class="gallery">
     <div class="wrapper">
         <h1 class="section-header">Gallery</h1>
         <div class="main-content">
@@ -187,11 +198,11 @@
             </div>
         </div>
     </div>
-    </div>
+    </div> -->
 
     <!-- FAQ -->
 
-    <div class="faq">
+    <!-- <div class="faq">
         <div class="image-box">
           <img src="src/img/faq_1.jpg" alt="Accordion Image">
         </div>
@@ -240,12 +251,12 @@
           </li>
         </ul>
         </div>
-      </div>
+      </div> -->
 
     <!-- Footer -->
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="footer_logo">
-            <!-- <img src="" alt=""> -->
+            <img src="" alt="">
             <span> Logo </span>
         </div>
         <span class="footer_title">
@@ -263,10 +274,11 @@
         <div class="footer_copyright">
             <span>&#169; 2023 - Boston Ambulance</span>
         </div>
-    </div>
+    </div> -->
     
 
     <script src="src/js/index.js"></script>
+    <script src="src/js/router.js"></script>
 
 </body>
 </html>

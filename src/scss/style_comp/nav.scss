@@ -2,7 +2,7 @@ nav{
     background-color: $color1;
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 2.5em;
+    padding: 2em 2.5em;
     align-items: center;
 
     @include responsive(s){
@@ -52,7 +52,7 @@ nav{
         transition: all 0.5s;
         gap: 2em;
 
-        @include responsive(s){
+        @include responsive(m){
             display: flex;
             position: static;
             flex-direction: row;
@@ -96,15 +96,15 @@ nav{
         height: 20px;
         position: relative;
 
-        @include responsive(s){
+        @include responsive(m){
         display: none;
         }
 
         input{
-            width: 45px;
+            width: 30px;
             height: 35px;
             opacity: 0;
-            left: -10px;
+            left: -3px;
             top: -7px;
             position: absolute;
             cursor: pointer;
@@ -134,7 +134,7 @@ nav{
     .nav_button{
         display: none;
 
-        @include responsive(s){
+        @include responsive(m){
             display: block;
 
             &_link{
@@ -145,6 +145,9 @@ nav{
                 padding: .4em 1em;
                 border-radius: 20px;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 5px;
             }
         }
     }
